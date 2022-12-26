@@ -1,0 +1,50 @@
+function Filters() {
+
+    const catalog = [
+        "All", 
+        "Markets",
+        "Crypto",
+        "Wallets",
+        "Socials",
+        "Video",
+        "Games"
+    ]
+    
+    const filters = document.querySelector(".filters")
+    
+    catalog.forEach(( i, index ) => {
+        filters.innerHTML += `
+            <li 
+                class="filters_li ${index === 0 ? "filters_li--active" : ""}" 
+                id="${index}"
+            >
+                ${i}
+            </li>
+        `
+    })
+    
+
+    filters.addEventListener("click", e => {
+        filters
+            .querySelector(".filters_li--active")
+            .classList.remove("filters_li--active")
+
+        e = e.target
+
+        if (e.classList.contains("filters_li")) {
+            e.classList.add("filters_li--active")
+            const a = document.querySelectorAll(".a")
+            
+            for ( let i = 0; i < a.length; i++ ) {
+                a[i].classList.contains("a"+e.id) || +e.id === 0 ? 
+                    a[i].classList.remove("invisibility--filter") :
+                    a[i].classList.add("invisibility--filter") 
+            }
+        }
+        
+    })
+
+
+}
+
+export default Filters;

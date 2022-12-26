@@ -11,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: max-content;
+    overflow-x: hidden;
 }
 .container {
     width: 97%;
@@ -89,7 +92,7 @@ body {
     align-items: center;
     height: 3.5rem;
     box-shadow: .1rem .2rem .3rem rgba(0, 0, 0, 0.3);
-    border-radius: .3rem;
+    border-radius: .5rem;
     overflow: hidden;
     
 }
@@ -110,13 +113,13 @@ body {
 .search_btn {
     border: none;
     margin: 0;
-    padding: 0.3rem;
+    padding: 0.7rem;
     width: 5rem;
     height: 100%;
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 200, 50);
+    background-color: rgb(0, 175, 44);
     cursor: pointer;
 }
 .search_btn:hover {
@@ -129,13 +132,51 @@ body {
 
 section {
     width: 100%;
-    overflow-x: hidden;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.product_container {
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.filters {
+    padding: .4rem 0;
+    margin: 1rem 0;
+    list-style-type: none;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.1);
+    border-radius:  .5rem;
+    overflow-x: auto;
+}
+.filters_li {
+    padding: .8rem 0;
+    margin: 0 .5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+    min-width: 10rem;
+    width: 100%;
+    text-align: center;
+    border-radius:  .5rem;
+}
+.filters_li--active {
+    color: rgb(0, 168, 191);
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 .block {
-    margin: 5rem 0 10rem;
+    margin: 3rem 0 10rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +188,7 @@ section {
 
 .a {
     position: relative;
-    width: 18rem;    
+    width: 15rem;    
     display: flex;
     gap: .6rem;
     flex-direction: column;
@@ -163,16 +204,15 @@ section {
     transform: translateY(-0.5rem);
     box-shadow: .5rem .5rem .3rem rgba(0, 0, 0, 0.3);
 }
-.invisibility {
-    display: none;
-}
+
 
 .status {
     position: absolute;
     top: 1rem;
     left: 0;
     border-radius: 0 .3rem .3rem 0;
-    background-color: rgb(0, 200, 50);
+    background-color: rgb(54, 215, 0);
+    box-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.3);
     padding: .5rem 1rem;
     color: #fff;
     font-size: 1.2rem;
@@ -180,8 +220,8 @@ section {
 }
 
 .img {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
     object-fit: cover;
     border-radius: 1rem;
     box-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.1);
@@ -195,7 +235,10 @@ section {
 
 
 
-
+.invisibility, 
+.invisibility--filter {
+    display: none;
+}
 
 
 
