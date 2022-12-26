@@ -15,7 +15,7 @@ const reg = [
         name: "Wise",
         img: "https://static.tildacdn.com/tild3161-3531-4365-b739-356235336631/wise-cover.svg",
         url: "https://wise.com/",
-        status: 0
+        status: 1
     },
     {
         name: "Revolut",
@@ -63,7 +63,7 @@ const reg = [
         name: "Bybit",
         img: "https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/86/76/e1/8676e1a1-89a0-bc77-6285-d3c962f26b48/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
         url: "https://www.bybit.com/",
-        status: 0
+        status: 1
     },
     {
         name: "Btse",
@@ -120,10 +120,10 @@ const reg = [
         status: 0
     },
     {
-        name: "Witebit",
+        name: "Whitebit",
         img: "https://assets.coingecko.com/coins/images/27045/large/wbt_token.png",
         url: "https://whitebit.com/",
-        status: 0
+        status: 1
     },
     {
         name: "Transak",
