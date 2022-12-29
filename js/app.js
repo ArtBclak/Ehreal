@@ -1,6 +1,7 @@
 import info from "./info.js"
 import Products from "./products.js"
 import Search from "./search.js"
+import Snow from "./snow.js"
 import Filters from "./filters.js"
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -10,4 +11,5 @@ window.addEventListener("DOMContentLoaded", () => {
     Products(reg)      
     Search()
     Filters()
+    Snow()
 })

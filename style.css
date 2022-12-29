@@ -6,12 +6,14 @@ html, body {
 }
 
 body {
-    background-color: rgb(225, 244, 255);
+    background-color: rgb(153, 210, 243);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
+    position: relative;
     height: max-content;
     overflow-x: hidden;
 }
@@ -19,10 +21,28 @@ body {
     width: 97%;
     max-width: 140rem;
     display: flex;
+    z-index: 100;
 }
 
+.snow {
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 0%;
+    z-index: 1;
+    animation: letitsnow 10s infinite linear;
+}
 
-
+@keyframes letitsnow {
+    0% {
+        top: 0%
+    }
+    100% {
+        top: 95%
+    }
+}
 
 
 
