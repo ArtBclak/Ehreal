@@ -25,7 +25,7 @@ body {
 }
 
 .snow {
-    position: absolute;
+    position: fixed;
     width: .5rem;
     height: .5rem;
     background-color: rgb(255, 255, 255);
