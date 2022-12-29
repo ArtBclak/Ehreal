@@ -1,13 +1,13 @@
 function Filters() {
 
     const catalog = [
-        "All", 
-        "Markets",
-        "Crypto",
-        "Wallets",
-        "Socials",
-        "Video",
-        "Games"
+        { name: "All Categories", svg: "All"}, 
+        { name: "Marketplaces", svg: "Markets"},
+        { name: "Crypto Wallets", svg: "Crypto"},
+        { name: "Wallets & Banks", svg: "Wallets"},
+        { name: "Social media", svg: "Socials"},
+        { name: "Video", svg: "Video"},
+        { name: "Games", svg: "Games"}
     ]
     
     const filters = document.querySelector(".filters")
@@ -18,10 +18,10 @@ function Filters() {
                 class="filters_li ${index === 0 ? "filters_li--active" : ""}" 
                 id="${index}"
             >
-            <svg class="filters_svg">
-                <use xlink:href="./img/Sprite.svg#${i}" />
+            <svg>
+                <use xlink:href="./img/Sprite.svg#${i.svg}" />
             </svg>
-                ${i}
+                ${i.name}
             </li>
         `
     })

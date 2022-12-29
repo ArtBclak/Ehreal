@@ -162,8 +162,7 @@ section {
     font-weight: 400;
     color: rgb(78, 78, 78);
     cursor: pointer;
-    min-width: 10rem;
-    width: 100%;
+    min-width: 17rem;
     border-radius:  .5rem;
     display: flex;
     justify-content: center;

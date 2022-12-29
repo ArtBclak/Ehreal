@@ -293,6 +293,20 @@ const reg = [
         category: 1,
         status: 0
     },
+    {
+        name: "League of Legends",
+        img: "https://www.leagueoflegends.com/static/placeholder-1c66220c6149b49352c4cf496f70ad86.jpg",
+        url: "https://www.leagueoflegends.com/",
+        category: 6,
+        status: 0
+    },
+    {
+        name: "Epic Games",
+        img: "https://cdn2.unrealengine.com/Epic+Games+Node%2FepicLogo_1920x1080-1920x1080-401b77ef30fa9e5aaadbdd99ad2ff27ceda27a6f.png",
+        url: "https://store.epicgames.com/",
+        category: 6,
+        status: 0
+    },
 ]
 
 
