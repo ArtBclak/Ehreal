@@ -204,7 +204,7 @@ const reg = [
     },
     {
         name: "Facebook",
-        img: "https://www.facebook.com/images/fb_icon_325x325.png",
+        img: "https://www.internetmatters.org/wp-content/uploads/2021/03/facebook-logo-new-600x315.png",
         url: "https://www.facebook.com/",
         category: 4,
         status: 1
@@ -270,6 +270,27 @@ const reg = [
         img: "https://pbs.twimg.com/profile_images/1478893871199186945/1mA6tezL_400x400.jpg",
         url: "https://www.dota2.com/",
         category: 6,
+        status: 0
+    },
+    {
+        name: "Walmart",
+        img: "https://www.channelengine.com/media/qcpkwlrw/walmart.jpg",
+        url: "https://www.walmart.com/",
+        category: 1,
+        status: 0
+    },
+    {
+        name: "Tinder",
+        img: "https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/de/ac/64/deac6448-dc23-6cca-4f96-ec2606fe3769/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png",
+        url: "https://tinder.com/",
+        category: 4,
+        status: 0
+    },
+    {
+        name: "Etsy",
+        img: "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/25/b5/8b/25b58b7e-6f10-bab4-2e97-01d6e8642554/BOEAppIcon-0-1x_U007emarketing-0-7-0-0-0-85-220.png/1200x630wa.png",
+        url: "https://www.etsy.com/",
+        category: 1,
         status: 0
     },
 ]

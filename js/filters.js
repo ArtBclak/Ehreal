@@ -18,6 +18,9 @@ function Filters() {
                 class="filters_li ${index === 0 ? "filters_li--active" : ""}" 
                 id="${index}"
             >
+            <svg class="filters_svg">
+                <use xlink:href="./img/Sprite.svg#${i}" />
+            </svg>
                 ${i}
             </li>
         `
