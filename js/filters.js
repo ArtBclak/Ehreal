@@ -25,13 +25,13 @@ function Filters() {
     
 
     filters.addEventListener("click", e => {
-        filters
-            .querySelector(".filters_li--active")
-            .classList.remove("filters_li--active")
-
         e = e.target
-
+        
         if (e.classList.contains("filters_li")) {
+            filters
+                .querySelector(".filters_li--active")
+                .classList.remove("filters_li--active")
+
             e.classList.add("filters_li--active")
             const a = document.querySelectorAll(".a")
             
