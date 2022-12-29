@@ -12,7 +12,8 @@ function Snow() {
             clearInterval(interval)
         }
     }
-    
+    create () 
+
     const interval = setInterval( create , 1127)
     
     
