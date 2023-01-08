@@ -99,15 +99,6 @@ function Cart(reg, added) {
 
 
 
-
-
-
-
-
-
-
-
-    onhandler()
 }
 
 
