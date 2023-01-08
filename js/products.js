@@ -1,33 +1,48 @@
 
-function Products(reg) {
+function Products(reg, added) {
 
     const block = document.querySelector(".block")
         
     reg.map( i => {
         block.innerHTML += `
-        <a
-            class="a a${i.category}"
-            href="${i.url}"
+        <div
+            class="prod prod${i.category} ${added.includes(i.id) ? "added" : ""}"
+ 
             alt="${i.name}"
             title="${i.name}"
-            target="_blank"
+            id="${i.id}"
         >
             ${ i.status === 1 ?
-                `<p class="status" >TOP</p>` : ""
+                `<p class="status">TOP</p>` : ""
             }
-            <img 
-                class="img" 
-                loading="lazy"
-                src="${i.img}"
+            
+            <a 
+                class="a"
+                href="${i.url}"
+                alt="${i.name}"
+                title="${i.name}"
+                target="_blank"
             >
-            <h3 class="name">
+                <img 
+                    class="img" 
+                    loading="lazy"
+                    src="${i.img}"
+                >
                 ${i.name}
-            </h3>
-        </a>
+            </a>
+            <button
+                type="button"
+                class="tobasket"
+            >
+                add to cart
+                <svg class="tobasket_svg">
+                    <use class="tobasket_use" xlink:href="./img/Sprite.svg#basket" />
+                </svg>
+            </button>
+        </div>
         `
     })
 
-    
 
 }
 

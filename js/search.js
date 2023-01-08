@@ -1,15 +1,15 @@
 function Search() {
     const search = document.querySelector(".search_input")
-    const a = document.querySelectorAll(".a") 
+    const prd = document.querySelectorAll(".prod") 
  
     
     search.addEventListener("input", ( e ) => {
         e = e.target.value.toLowerCase()
-        for ( let i = 0; i < a.length; i++ ) {
-            const content = a[i].querySelector(".name").textContent.toLowerCase()
+        for ( let i = 0; i < prd.length; i++ ) {
+            const content = prd[i].title.toLowerCase()
             content.includes(e) ? 
-                a[i].classList.remove("invisibility") :
-                a[i].classList.add("invisibility") 
+                prd[i].classList.remove("invisibility") :
+                prd[i].classList.add("invisibility") 
         }
     })
 

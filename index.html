@@ -18,7 +18,7 @@
     <meta property="og:image" content="https://ehreal.pp.ua/img/logo.png">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Ehreal</title>
 </head>
 <body>
@@ -26,7 +26,10 @@
         <div class="container header_container"> 
             <h1 class="logo">
                 <img class="logo_img" src="./img/logo.png">
-                <span class="logo_txt">Ehreal</span>
+                <p class="logo_txt">
+                    Ehreal 
+                    <span class="logo_span">shop</span>
+                </p>
             </h1>
             <div class="search">
                 <input 
@@ -65,16 +68,32 @@
                         <use xlink:href="./img/Sprite.svg#wa" />
                     </svg>
                 </a>
+
             </div>
+            <button class="basket" type="button">
+                <svg class="basket_svg">
+                    <use xlink:href="./img/Sprite.svg#basket" />
+                </svg>
+                <p class="basket_count">0</p>
+            </button>
         </div>
     </header>
+   
     <section>
         <div class="container product_container">
             <ul class="filters"></ul>
             <div class="block"></div>
         </div>
     </section>    
-
+    
+    <section class="cart">
+        <div class="cart_panel">
+            <a class="cart_a cart_email" target="_blank" title="Order">
+                Order (E-mail)
+            </a>
+        </div>
+        <div class="container cart_container"></div>
+    </section> 
     <script src="./js/app.js" type="module"></script>
 </body>
 </html>

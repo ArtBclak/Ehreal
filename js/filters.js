@@ -34,14 +34,12 @@ function Filters() {
             filters
                 .querySelector(".filters_li--active")
                 .classList.remove("filters_li--active")
-
             e.classList.add("filters_li--active")
-            const a = document.querySelectorAll(".a")
-            
-            for ( let i = 0; i < a.length; i++ ) {
-                a[i].classList.contains("a"+e.id) || +e.id === 0 ? 
-                    a[i].classList.remove("invisibility--filter") :
-                    a[i].classList.add("invisibility--filter") 
+            const prd = document.querySelectorAll(".prod")
+            for ( let i = 0; i < prd.length; i++ ) {
+                prd[i].classList.contains("prod"+e.id) || +e.id === 0 ? 
+                    prd[i].classList.remove("invisibility--filter") :
+                    prd[i].classList.add("invisibility--filter") 
             }
         }
         
